@@ -1,0 +1,49 @@
+project open /home/evoldab/complete
+# Loading project complete
+# Compile of core.v was successful.
+vsim work.tb_complete
+# vsim work.tb_complete 
+# Start time: 14:14:48 on Aug 06,2024
+# Loading work.tb_complete
+# Loading work.core
+# Loading work.IF
+# Loading work.ID
+# Loading work.EX
+add wave -position insertpoint sim:/tb_complete/uut/*
+run
+# At time                    0, PC = 0000, instr_IF = 88c8, instr_ID = 0000, opcode = 00, funct3 = 000, R0 = xxxx, R1 = xxxx, R2 = xxxx, R3 = xxxx, R4 = xxxx, R5 = xxxx, R6 = xxxx, R7 = xxxx
+# At time                   20, PC = 0001, instr_IF = 8861, instr_ID = 88c8, opcode = 10, funct3 = 001, R0 = 0000, R1 = 0001, R2 = 0002, R3 = 0003, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0007
+# At time                   40, PC = 0002, instr_IF = 8892, instr_ID = 8861, opcode = 10, funct3 = 001, R0 = 0000, R1 = 0001, R2 = 0002, R3 = 0003, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0007
+# At time                   60, PC = 0003, instr_IF = 4304, instr_ID = 8892, opcode = 10, funct3 = 001, R0 = 0019, R1 = 0001, R2 = 0002, R3 = 0003, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0007
+# At time                   80, PC = 0004, instr_IF = 884f, instr_ID = 4304, opcode = 01, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0002, R3 = 0003, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0007
+run
+# At time                  100, PC = 0005, instr_IF = 4a5c, instr_ID = 884f, opcode = 10, funct3 = 001, R0 = 0019, R1 = 000c, R2 = 0012, R3 = 0003, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0007
+# At time                  120, PC = 0006, instr_IF = c032, instr_ID = 4a5c, opcode = 01, funct3 = 001, R0 = 0019, R1 = 000c, R2 = 0012, R3 = 0025, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0007
+# At time                  140, PC = 0007, instr_IF = 0000, instr_ID = c032, opcode = 11, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0012, R3 = 0025, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0009
+# At time                  160, PC = 0008, instr_IF = 0000, instr_ID = 0000, opcode = 00, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0009
+# At time                  180, PC = 0009, instr_IF = 8825, instr_ID = 0000, opcode = 00, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0009
+run
+# At time                  200, PC = 000a, instr_IF = e005, instr_ID = 8825, opcode = 10, funct3 = 001, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0009
+# At time                  220, PC = 000b, instr_IF = 0000, instr_ID = e005, opcode = 11, funct3 = 100, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0005, R6 = 0006, R7 = 0009
+# At time                  240, PC = 000c, instr_IF = 0000, instr_ID = 0000, opcode = 00, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  260, PC = 0004, instr_IF = 884f, instr_ID = 0000, opcode = 00, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  280, PC = 0005, instr_IF = 4a5c, instr_ID = 884f, opcode = 10, funct3 = 001, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+run
+# At time                  300, PC = 0006, instr_IF = c032, instr_ID = 4a5c, opcode = 01, funct3 = 001, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  320, PC = 0007, instr_IF = 0000, instr_ID = c032, opcode = 11, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0009, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  340, PC = 0008, instr_IF = 0000, instr_ID = 0000, opcode = 00, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0000, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  360, PC = 000d, instr_IF = 8ff8, instr_ID = 0000, opcode = 00, funct3 = 000, R0 = 0019, R1 = 000c, R2 = 0000, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  380, PC = 000e, instr_IF = 8ff9, instr_ID = 8ff8, opcode = 10, funct3 = 001, R0 = 0019, R1 = 000c, R2 = 0000, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+run
+# At time                  400, PC = 000f, instr_IF = 8ffa, instr_ID = 8ff9, opcode = 10, funct3 = 001, R0 = 0019, R1 = 000c, R2 = 0000, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  420, PC = 0010, instr_IF = 8ffb, instr_ID = 8ffa, opcode = 10, funct3 = 001, R0 = 00ff, R1 = 000c, R2 = 0000, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  440, PC = 0011, instr_IF = 8ffc, instr_ID = 8ffb, opcode = 10, funct3 = 001, R0 = 00ff, R1 = 00ff, R2 = 0000, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  460, PC = 0012, instr_IF = 8ffd, instr_ID = 8ffc, opcode = 10, funct3 = 001, R0 = 00ff, R1 = 00ff, R2 = 00ff, R3 = 0025, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  480, PC = 0013, instr_IF = 8ffe, instr_ID = 8ffd, opcode = 10, funct3 = 001, R0 = 00ff, R1 = 00ff, R2 = 00ff, R3 = 00ff, R4 = 0004, R5 = 0004, R6 = 0006, R7 = 0009
+run
+# At time                  500, PC = 0014, instr_IF = 8fff, instr_ID = 8ffe, opcode = 10, funct3 = 001, R0 = 00ff, R1 = 00ff, R2 = 00ff, R3 = 00ff, R4 = 00ff, R5 = 0004, R6 = 0006, R7 = 0009
+# At time                  520, PC = 0015, instr_IF = xxxx, instr_ID = 8fff, opcode = 10, funct3 = 001, R0 = 00ff, R1 = 00ff, R2 = 00ff, R3 = 00ff, R4 = 00ff, R5 = 00ff, R6 = 0006, R7 = 0009
+# At time                  540, PC = 0016, instr_IF = xxxx, instr_ID = xxxx, opcode = xx, funct3 = xxx, R0 = 00ff, R1 = 00ff, R2 = 00ff, R3 = 00ff, R4 = 00ff, R5 = 00ff, R6 = 00ff, R7 = 0009
+# At time                  560, PC = 0017, instr_IF = xxxx, instr_ID = xxxx, opcode = xx, funct3 = xxx, R0 = 00ff, R1 = 00ff, R2 = 00ff, R3 = 00ff, R4 = 00ff, R5 = 00ff, R6 = 00ff, R7 = 00ff
+# At time                  580, PC = 0018, instr_IF = xxxx, instr_ID = xxxx, opcode = xx, funct3 = xxx, R0 = 00ff, R1 = 00ff, R2 = 00ff, R3 = 00ff, R4 = 00ff, R5 = 00ff, R6 = 00ff, R7 = 00ff
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/evoldab/wave.do
